@@ -35,17 +35,11 @@ namespace Part_6___Loops
                 Console.WriteLine("$1 - Captain Kirk");
                 Console.WriteLine("$2 - Captain Picard");
                 selection = Convert.ToInt32(Console.ReadLine());
-            } while (selection != 1);
+            } while (!(selection == 1 || selection == 2));
             Console.WriteLine("You chose Captain Picard!");
             Console.WriteLine("You are not correct!");
 
-            while (selection != 2);
-            Console.WriteLine("You chose Captain Kirk!");
-            Console.WriteLine("You are correct!");
-
-
-
-
+            
         }
     }
 }
