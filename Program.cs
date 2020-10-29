@@ -36,8 +36,7 @@ namespace Part_6___Loops
                 Console.WriteLine("$2 - Captain Picard");
                 selection = Convert.ToInt32(Console.ReadLine());
             } while (!(selection == 1 || selection == 2));
-            Console.WriteLine("You chose Captain Picard!");
-            Console.WriteLine("You are not correct!");
+            Console.WriteLine("You are correct!");
 
             
         }
