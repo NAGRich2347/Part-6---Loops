@@ -154,13 +154,19 @@ namespace Part_6___Loops
 
             //ODD SUM
 
-            int user_number;
+            int i;
+            int n;
+            int sum;
 
             Console.WriteLine("Please enter a whole number...");
-            user_number = Convert.ToInt32(Console.ReadLine());
-            user_number = user_number ++ 1;
+            i = Convert.ToInt32(Console.ReadLine());
+            for (i=1; i<=n; i++)
+            {
+                Console.Write("{0} ", 2 * i - 1);
+                sum += 2 * i - 1;
+            }
 
-
+            Console.Write($"The sum of your odd number to {0} is {1}");
 
 
 
