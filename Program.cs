@@ -27,18 +27,39 @@ namespace Part_6___Loops
             //    Console.WriteLine("That is an invalid integer, please try again.");
             //Console.WriteLine($"Thanks for {number}!");
 
-            int selection;
-            
-            do
-            {
-                Console.WriteLine("Who is the better captain?");
-                Console.WriteLine("$1 - Captain Kirk");
-                Console.WriteLine("$2 - Captain Picard");
-                selection = Convert.ToInt32(Console.ReadLine());
-            } while (!(selection == 1 || selection == 2));
-            Console.WriteLine("You are correct!");
+            //int selection;
 
-            
+            //do
+            //{
+            //    Console.WriteLine("Who is the better captain?");
+            //    Console.WriteLine("$1 - Captain Kirk");
+            //    Console.WriteLine("$2 - Captain Picard");
+            //    selection = Convert.ToInt32(Console.ReadLine());
+            //} while (!(selection == 1 || selection == 2));
+            //Console.WriteLine("You are correct!");
+
+            int num1;
+            int num2;
+            int num3;
+
+            Console.WriteLine("Please enter two numbers of your choice...");
+
+            Console.WriteLine("Enter your first number.");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Now, enter your second number.");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Finally, enter a number between " + num1 + " and " + num2 + ".");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            while (!Int32.TryParse(Console.ReadLine(), out num4))
+                Console.WriteLine("That is an invalid integer, please try again.");
+
+
+
+
+
         }
     }
 }
