@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Security.Cryptography;
 
 namespace Part_6___Loops
 {
@@ -154,23 +156,31 @@ namespace Part_6___Loops
 
             //ODD SUM
 
-            int i;
-            int n;
-            int sum;
+            //int i, num, sum = 0;
 
-            Console.WriteLine("Please enter a whole number...");
-            i = Convert.ToInt32(Console.ReadLine());
-            for (i=1; i<=n; i++)
-            {
-                Console.Write("{0} ", 2 * i - 1);
-                sum += 2 * i - 1;
-            }
+            //Console.WriteLine("Please enter any number.");
+            //num = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write($"The sum of your odd number to {0} is {1}");
+            //for (i = 1; i <= num; i += 2)
+            //{
+            //    sum += i;
+            //}
+            //Console.WriteLine($"The sum of all odd numbers between 1 and {num} = {sum}");
+            //Console.ReadLine();
 
+            //RANDOM NUMBERS
 
+            int min = 0;
+            int max = 0;
 
+            Console.WriteLine("Please enter a minimum value.");
+            min = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter a maximum value.");
+            max = Convert.ToInt32(Console.ReadLine());
 
+            Random r = new Random();
+            int genRand = r.Next(min, max);
+            Console.WriteLine("Your random number = " + genRand);
         }
     }
 }
